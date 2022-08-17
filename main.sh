@@ -24,5 +24,5 @@ while [ $DATE -le $y ]; do
     git commit -m "$msg" --date="$ 17/08/22 10:10:10"
 
     # Calculate the next date using the 'date' command
-    DATE=$(date -d "$DATE + 1 day" +%Y%m%d)
+    DATE=$(date "$DATE + 1 day" +%Y%m%d)
 done
